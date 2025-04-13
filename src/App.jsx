@@ -5,6 +5,7 @@ import Home from "./views/Home/Home";
 import About from "./views/About/About";
 import Skills from "./components/Skills/Skills";
 import Contact from "./views/Contact/Contact";
+import CV from "./views/CV/Cv";
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
         <Home />
         <About />
         <Skills />
-        <section id="cv">CV</section>
+        <CV />
         <section id="services">Services</section>
        <Contact />
       </main>
