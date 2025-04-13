@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Home from "./views/Home/Home";
 import About from "./views/About/About";
 import Skills from "./components/Skills/Skills";
+import Contact from "./views/Contact/Contact";
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
         <Skills />
         <section id="cv">CV</section>
         <section id="services">Services</section>
-        <section id="contact">Contact</section>
+       <Contact />
       </main>
       <Footer />
     </div>
