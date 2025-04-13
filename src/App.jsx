@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import Home from "./views/Home/Home";
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       <Navbar />
       <main className="main-content">
         {/* Ajoute ici les sections de ton site */}
-        <section id="accueil">Accueil</section>
+        <Home />
         <section id="apropos">À propos</section>
         <section id="cv">CV</section>
         <section id="services">Services</section>

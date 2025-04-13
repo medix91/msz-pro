@@ -1,0 +1,121 @@
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 6rem;
+    min-height: calc(100vh - var(--navbar-height));
+    gap: 2rem;
+  }
+  
+  .home-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .home-title {
+    font-size: 3rem;
+    color: var(--color-text);
+  }
+  
+  .home-subtitle {
+    font-size: 1.5rem;
+    color: #555;
+  }
+  
+  .home-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.8rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-filled {
+    background-color: var(--color-primary);
+    color: white;
+    border: 2px solid var(--color-primary);
+  }
+  
+  .btn-outline {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+  }
+  
+  .btn-filled:hover,
+  .btn-outline:hover {
+    transform: scale(1.05);
+  }
+  
+  .home-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home-image {
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  /* 🎯 Responsive amélioré */
+  @media (max-width: 768px) {
+    .home-section {
+      flex-direction: column;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+  
+    .home-right {
+      display: flex;
+      order: -1; /* 👉 affiche l'image en premier */
+      justify-content: center;
+      margin-bottom: 2rem;
+    
+    }
+  
+    .home-left {
+      align-items: center;
+    }
+  
+    .home-title {
+      font-size: 2rem;
+    }
+  
+    .home-subtitle {
+      font-size: 1.1rem;
+    }
+  
+    .home-buttons {
+      flex-direction: column;
+      width: 100%;
+      gap: 1rem;
+      align-items: center;
+    }
+  
+    .btn {
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .home-title {
+      font-size: 1.6rem;
+    }
+  
+    .home-subtitle {
+      font-size: 1rem;
+    }
+  }
+  
