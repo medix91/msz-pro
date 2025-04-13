@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./views/Home/Home";
+import About from "./views/About/About";
 
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
       <main className="main-content">
         {/* Ajoute ici les sections de ton site */}
         <Home />
-        <section id="apropos">À propos</section>
+        <About />
         <section id="cv">CV</section>
         <section id="services">Services</section>
         <section id="contact">Contact</section>
