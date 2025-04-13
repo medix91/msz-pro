@@ -22,7 +22,7 @@ Bienvenue sur mon portfolio personnel ! Ce site présente mon parcours, mes comp
 1. Clonez ce repository :
 
    ```bash
-   git clone https://github.com/username/msz-pro.git
+   git clone https://github.com/medix91/msz-pro.git
 
 2. Installer les dépendances :
 
