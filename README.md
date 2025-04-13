@@ -30,5 +30,6 @@ Bienvenue sur mon portfolio personnel ! Ce site présente mon parcours, mes comp
 npm install
 
 3. Lancer le projet:
+
   ```bash
 npm run dev
