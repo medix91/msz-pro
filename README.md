@@ -24,12 +24,13 @@ Bienvenue sur mon portfolio personnel ! Ce site présente mon parcours, mes comp
    ```bash
    git clone https://github.com/medix91/msz-pro.git
 
+
 2. Installer les dépendances :
 
-  ```bash
-npm install
+   ```bash
+   npm install
 
 3. Lancer le projet:
 
-  ```bash
-npm run dev
+   ```bash
+   npm run dev
