@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600;700&display=swap');
+@import './variables.css';
+@import './responsive.css';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: #f9f9f9; /* fond gris clair */
+  color: var(--color-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Liens */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* Titres par défaut */
+h1, h2, h3, h4, h5 {
+  color: var(--color-text);
+  font-weight: 600;
+}

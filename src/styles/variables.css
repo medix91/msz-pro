@@ -1,0 +1,7 @@
+:root {
+  --color-primary: #00BF63;
+  --color-text: #2A3B47; /* bleu pétrole / gris bleu foncé */
+  --color-light: #F0F0F0;
+  --navbar-height: 80px; /* augmenté de 5% environ */
+  --font-main: 'Comfortaa', cursive;
+}

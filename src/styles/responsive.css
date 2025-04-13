@@ -1,0 +1,28 @@
+/* Responsive générique */
+
+@media (max-width: 1024px) {
+    html {
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+  
+    section {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    html {
+      font-size: 13px;
+    }
+  
+    section {
+      padding: 1rem;
+    }
+  }
+  

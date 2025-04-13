@@ -1,0 +1,150 @@
+@import '../../styles/variables.css';
+
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 5%;
+  width: 90%;
+  height: 70px; /* légèrement plus haut */
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  font-family: var(--font-main);
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  color: var(--color-text);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: var(--color-primary);
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icons a {
+  font-size: 1.2rem;
+  color: var(--color-text);
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--color-primary);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--color-text);
+  z-index: 1001;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+/* Side Panel - Mobile Menu */
+.sidepanel {
+  position: fixed;
+  top: 100px; /* pour qu'il soit bien en dessous de la navbar */
+  left: 5%;
+  width: 90%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sidepanel.open {
+  display: flex;
+}
+
+.sidepanel ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.sidepanel ul li {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.sidepanel ul li a {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--color-text);
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidepanel ul li a:hover {
+  color: var(--color-primary);
+  background-color: rgba(0, 191, 99, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .nav-links,
+  .social-icons {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .sidepanel {
+    top: 100px; /* marge au-dessus du menu mobile */
+  }
+}
