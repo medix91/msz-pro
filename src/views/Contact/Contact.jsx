@@ -2,6 +2,10 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
 
+const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
 const Contact = () => {
   const form = useRef();
 
@@ -9,10 +13,10 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_qtq17vp",
-      "template_88rbp1w",
+      serviceID,
+      templateID,
       form.current,
-      "ivKCp7oAgBjTaZmdx"
+      publicKey
     ).then(
       (result) => {
         alert("Message envoyé !");

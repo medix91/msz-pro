@@ -31,8 +31,8 @@ const Navbar = () => {
 
           {/* Social Icons */}
           <div className="social-icons">
-            <a href="#"><FaGithub /></a>
-            <a href="#"><FaLinkedin /></a>
+            <a href="https://github.com/medix91"><FaGithub /></a>
+            <a href="https://www.linkedin.com/in/mehdi-salim-zayani-906baa34a/"><FaLinkedin /></a>
             <a href="#"><FaWhatsapp /></a>
             <a href="#"><FaInstagram /></a>
           </div>

@@ -8,7 +8,7 @@ const Services = () => {
       <div className="services-left">
         <h2 className="services-title">Services</h2>
         <p className="services-subtitle">Des solutions web et mobile sur mesure pour toutes vos entreprises. Je vous accompagnons à chaque étape pour vous offrir des résultats optimaux.</p>
-        <button className="services-btn">Me contacter</button>
+   
       </div>
       
       <div className="services-right">
